@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B4106891B72F76400E60FDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4106881B72F76400E60FDD /* AppDelegate.swift */; };
+		9B41068C1B72F76400E60FDD /* PocketBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B41068A1B72F76400E60FDD /* PocketBook.xcdatamodeld */; };
+		9B4106931B72F76400E60FDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4106921B72F76400E60FDD /* Images.xcassets */; };
+		9B4106961B72F76400E60FDD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B4106941B72F76400E60FDD /* LaunchScreen.xib */; };
+		9B4106A21B72F76400E60FDD /* PocketBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4106A11B72F76400E60FDD /* PocketBookTests.swift */; };
+		9B4106AC1B72F7AF00E60FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4106AB1B72F7AF00E60FDD /* Main.storyboard */; };
+		9B4106B31B72F7DE00E60FDD /* PocketBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4106AD1B72F7DE00E60FDD /* PocketBookModel.swift */; };
+		9B4106B41B72F7DE00E60FDD /* PocketBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4106AE1B72F7DE00E60FDD /* PocketBookViewController.swift */; };
+		9B4106B51B72F7DE00E60FDD /* UserPreferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4106AF1B72F7DE00E60FDD /* UserPreferencesModel.swift */; };
+		9B4106B61B72F7DE00E60FDD /* UserPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4106B01B72F7DE00E60FDD /* UserPreferencesViewController.swift */; };
+		9B4106B71B72F7DE00E60FDD /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4106B11B72F7DE00E60FDD /* Util.swift */; };
+		9B4106BF1B72F7EE00E60FDD /* JSONBackEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4106BB1B72F7EE00E60FDD /* JSONBackEnd.swift */; };
+		9B4106C01B72F7EE00E60FDD /* lib.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B4106BC1B72F7EE00E60FDD /* lib.png */; };
+		9B4106C11B72F7EE00E60FDD /* LibraryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4106BD1B72F7EE00E60FDD /* LibraryModel.swift */; };
+		9B4106C21B72F7EE00E60FDD /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4106BE1B72F7EE00E60FDD /* LibraryViewController.swift */; };
+		9B4106C61B72F7FC00E60FDD /* HTTPBackEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4106C51B72F7FC00E60FDD /* HTTPBackEnd.swift */; };
+		9B4106C91B72F80000E60FDD /* BookDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4106C71B72F80000E60FDD /* BookDetailModel.swift */; };
+		9B4106CA1B72F80000E60FDD /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4106C81B72F80000E60FDD /* BookDetailViewController.swift */; };
+		9B4106CD1B72F98700E60FDD /* cog.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B4106CB1B72F98700E60FDD /* cog.png */; };
+		9B4106CE1B72F98700E60FDD /* cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B4106CC1B72F98700E60FDD /* cover.jpg */; };
+		9B4106D01B72F98D00E60FDD /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B4106CF1B72F98D00E60FDD /* book.png */; };
+		9B4106D71B72FF7500E60FDD /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4106D61B72FF7500E60FDD /* Book.swift */; };
+		9B4106D91B732A7600E60FDD /* Master.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4106D81B732A7600E60FDD /* Master.swift */; };
+		9B4106DB1B73543500E60FDD /* loading_spinner.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9B4106DA1B73543500E60FDD /* loading_spinner.gif */; };
+		9B4106DD1B73AA1E00E60FDD /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4106DC1B73AA1E00E60FDD /* Library.swift */; };
+		9B4106DF1B73C1BB00E60FDD /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4106DE1B73C1BB00E60FDD /* Chapter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B41069C1B72F76400E60FDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B41067B1B72F76400E60FDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B4106821B72F76400E60FDD;
+			remoteInfo = PocketBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9B4106831B72F76400E60FDD /* PocketBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4106871B72F76400E60FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B4106881B72F76400E60FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B41068B1B72F76400E60FDD /* PocketBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PocketBook.xcdatamodel; sourceTree = "<group>"; };
+		9B4106921B72F76400E60FDD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9B4106951B72F76400E60FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9B41069B1B72F76400E60FDD /* PocketBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4106A01B72F76400E60FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B4106A11B72F76400E60FDD /* PocketBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketBookTests.swift; sourceTree = "<group>"; };
+		9B4106AB1B72F7AF00E60FDD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9B4106AD1B72F7DE00E60FDD /* PocketBookModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PocketBookModel.swift; sourceTree = "<group>"; };
+		9B4106AE1B72F7DE00E60FDD /* PocketBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PocketBookViewController.swift; sourceTree = "<group>"; };
+		9B4106AF1B72F7DE00E60FDD /* UserPreferencesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreferencesModel.swift; sourceTree = "<group>"; };
+		9B4106B01B72F7DE00E60FDD /* UserPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreferencesViewController.swift; sourceTree = "<group>"; };
+		9B4106B11B72F7DE00E60FDD /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		9B4106BB1B72F7EE00E60FDD /* JSONBackEnd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONBackEnd.swift; sourceTree = "<group>"; };
+		9B4106BC1B72F7EE00E60FDD /* lib.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lib.png; sourceTree = "<group>"; };
+		9B4106BD1B72F7EE00E60FDD /* LibraryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryModel.swift; sourceTree = "<group>"; };
+		9B4106BE1B72F7EE00E60FDD /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		9B4106C51B72F7FC00E60FDD /* HTTPBackEnd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPBackEnd.swift; sourceTree = "<group>"; };
+		9B4106C71B72F80000E60FDD /* BookDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailModel.swift; sourceTree = "<group>"; };
+		9B4106C81B72F80000E60FDD /* BookDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		9B4106CB1B72F98700E60FDD /* cog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cog.png; sourceTree = "<group>"; };
+		9B4106CC1B72F98700E60FDD /* cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cover.jpg; sourceTree = "<group>"; };
+		9B4106CF1B72F98D00E60FDD /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book.png; sourceTree = "<group>"; };
+		9B4106D61B72FF7500E60FDD /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		9B4106D81B732A7600E60FDD /* Master.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Master.swift; sourceTree = "<group>"; };
+		9B4106DA1B73543500E60FDD /* loading_spinner.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = loading_spinner.gif; path = ../../../Downloads/loading_spinner.gif; sourceTree = "<group>"; };
+		9B4106DC1B73AA1E00E60FDD /* Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		9B4106DE1B73C1BB00E60FDD /* Chapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B4106801B72F76400E60FDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B4106981B72F76400E60FDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B41067A1B72F76400E60FDD = {
+			isa = PBXGroup;
+			children = (
+				9B4106851B72F76400E60FDD /* PocketBook */,
+				9B41069E1B72F76400E60FDD /* PocketBookTests */,
+				9B4106841B72F76400E60FDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B4106841B72F76400E60FDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B4106831B72F76400E60FDD /* PocketBook.app */,
+				9B41069B1B72F76400E60FDD /* PocketBookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B4106851B72F76400E60FDD /* PocketBook */ = {
+			isa = PBXGroup;
+			children = (
+				9B4106DC1B73AA1E00E60FDD /* Library.swift */,
+				9B4106D61B72FF7500E60FDD /* Book.swift */,
+				9B4106DE1B73C1BB00E60FDD /* Chapter.swift */,
+				9B4106D81B732A7600E60FDD /* Master.swift */,
+				9B4106D51B72FA6500E60FDD /* BackEnd */,
+				9B4106D41B72FA5D00E60FDD /* BookDetail */,
+				9B4106D31B72FA5000E60FDD /* PockerBookApp */,
+				9B4106D21B72FA3E00E60FDD /* UserPreferences */,
+				9B4106D11B72FA3000E60FDD /* Library */,
+				9B4106881B72F76400E60FDD /* AppDelegate.swift */,
+				9B4106921B72F76400E60FDD /* Images.xcassets */,
+				9B4106941B72F76400E60FDD /* LaunchScreen.xib */,
+				9B4106AB1B72F7AF00E60FDD /* Main.storyboard */,
+				9B41068A1B72F76400E60FDD /* PocketBook.xcdatamodeld */,
+				9B4106861B72F76400E60FDD /* Supporting Files */,
+			);
+			path = PocketBook;
+			sourceTree = "<group>";
+		};
+		9B4106861B72F76400E60FDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B4106DA1B73543500E60FDD /* loading_spinner.gif */,
+				9B4106BC1B72F7EE00E60FDD /* lib.png */,
+				9B4106CB1B72F98700E60FDD /* cog.png */,
+				9B4106CC1B72F98700E60FDD /* cover.jpg */,
+				9B4106CF1B72F98D00E60FDD /* book.png */,
+				9B4106871B72F76400E60FDD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B41069E1B72F76400E60FDD /* PocketBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B4106A11B72F76400E60FDD /* PocketBookTests.swift */,
+				9B41069F1B72F76400E60FDD /* Supporting Files */,
+			);
+			path = PocketBookTests;
+			sourceTree = "<group>";
+		};
+		9B41069F1B72F76400E60FDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B4106A01B72F76400E60FDD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B4106D11B72FA3000E60FDD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				9B4106BE1B72F7EE00E60FDD /* LibraryViewController.swift */,
+				9B4106BD1B72F7EE00E60FDD /* LibraryModel.swift */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		9B4106D21B72FA3E00E60FDD /* UserPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				9B4106B01B72F7DE00E60FDD /* UserPreferencesViewController.swift */,
+				9B4106AF1B72F7DE00E60FDD /* UserPreferencesModel.swift */,
+			);
+			name = UserPreferences;
+			sourceTree = "<group>";
+		};
+		9B4106D31B72FA5000E60FDD /* PockerBookApp */ = {
+			isa = PBXGroup;
+			children = (
+				9B4106AE1B72F7DE00E60FDD /* PocketBookViewController.swift */,
+				9B4106AD1B72F7DE00E60FDD /* PocketBookModel.swift */,
+			);
+			name = PockerBookApp;
+			sourceTree = "<group>";
+		};
+		9B4106D41B72FA5D00E60FDD /* BookDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9B4106C81B72F80000E60FDD /* BookDetailViewController.swift */,
+				9B4106C71B72F80000E60FDD /* BookDetailModel.swift */,
+			);
+			name = BookDetail;
+			sourceTree = "<group>";
+		};
+		9B4106D51B72FA6500E60FDD /* BackEnd */ = {
+			isa = PBXGroup;
+			children = (
+				9B4106BB1B72F7EE00E60FDD /* JSONBackEnd.swift */,
+				9B4106B11B72F7DE00E60FDD /* Util.swift */,
+				9B4106C51B72F7FC00E60FDD /* HTTPBackEnd.swift */,
+			);
+			name = BackEnd;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B4106821B72F76400E60FDD /* PocketBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B4106A51B72F76400E60FDD /* Build configuration list for PBXNativeTarget "PocketBook" */;
+			buildPhases = (
+				9B41067F1B72F76400E60FDD /* Sources */,
+				9B4106801B72F76400E60FDD /* Frameworks */,
+				9B4106811B72F76400E60FDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketBook;
+			productName = PocketBook;
+			productReference = 9B4106831B72F76400E60FDD /* PocketBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B41069A1B72F76400E60FDD /* PocketBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B4106A81B72F76400E60FDD /* Build configuration list for PBXNativeTarget "PocketBookTests" */;
+			buildPhases = (
+				9B4106971B72F76400E60FDD /* Sources */,
+				9B4106981B72F76400E60FDD /* Frameworks */,
+				9B4106991B72F76400E60FDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B41069D1B72F76400E60FDD /* PBXTargetDependency */,
+			);
+			name = PocketBookTests;
+			productName = PocketBookTests;
+			productReference = 9B41069B1B72F76400E60FDD /* PocketBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B41067B1B72F76400E60FDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Nathanael Fournier-Tombs";
+				TargetAttributes = {
+					9B4106821B72F76400E60FDD = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					9B41069A1B72F76400E60FDD = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 9B4106821B72F76400E60FDD;
+					};
+				};
+			};
+			buildConfigurationList = 9B41067E1B72F76400E60FDD /* Build configuration list for PBXProject "PocketBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B41067A1B72F76400E60FDD;
+			productRefGroup = 9B4106841B72F76400E60FDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B4106821B72F76400E60FDD /* PocketBook */,
+				9B41069A1B72F76400E60FDD /* PocketBookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B4106811B72F76400E60FDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4106CD1B72F98700E60FDD /* cog.png in Resources */,
+				9B4106AC1B72F7AF00E60FDD /* Main.storyboard in Resources */,
+				9B4106C01B72F7EE00E60FDD /* lib.png in Resources */,
+				9B4106DB1B73543500E60FDD /* loading_spinner.gif in Resources */,
+				9B4106CE1B72F98700E60FDD /* cover.jpg in Resources */,
+				9B4106961B72F76400E60FDD /* LaunchScreen.xib in Resources */,
+				9B4106931B72F76400E60FDD /* Images.xcassets in Resources */,
+				9B4106D01B72F98D00E60FDD /* book.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B4106991B72F76400E60FDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B41067F1B72F76400E60FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4106DD1B73AA1E00E60FDD /* Library.swift in Sources */,
+				9B4106CA1B72F80000E60FDD /* BookDetailViewController.swift in Sources */,
+				9B4106DF1B73C1BB00E60FDD /* Chapter.swift in Sources */,
+				9B4106B51B72F7DE00E60FDD /* UserPreferencesModel.swift in Sources */,
+				9B41068C1B72F76400E60FDD /* PocketBook.xcdatamodeld in Sources */,
+				9B4106B71B72F7DE00E60FDD /* Util.swift in Sources */,
+				9B4106D91B732A7600E60FDD /* Master.swift in Sources */,
+				9B4106B31B72F7DE00E60FDD /* PocketBookModel.swift in Sources */,
+				9B4106C11B72F7EE00E60FDD /* LibraryModel.swift in Sources */,
+				9B4106891B72F76400E60FDD /* AppDelegate.swift in Sources */,
+				9B4106D71B72FF7500E60FDD /* Book.swift in Sources */,
+				9B4106BF1B72F7EE00E60FDD /* JSONBackEnd.swift in Sources */,
+				9B4106B61B72F7DE00E60FDD /* UserPreferencesViewController.swift in Sources */,
+				9B4106B41B72F7DE00E60FDD /* PocketBookViewController.swift in Sources */,
+				9B4106C21B72F7EE00E60FDD /* LibraryViewController.swift in Sources */,
+				9B4106C61B72F7FC00E60FDD /* HTTPBackEnd.swift in Sources */,
+				9B4106C91B72F80000E60FDD /* BookDetailModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B4106971B72F76400E60FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4106A21B72F76400E60FDD /* PocketBookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B41069D1B72F76400E60FDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B4106821B72F76400E60FDD /* PocketBook */;
+			targetProxy = 9B41069C1B72F76400E60FDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9B4106941B72F76400E60FDD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B4106951B72F76400E60FDD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B4106A31B72F76400E60FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B4106A41B72F76400E60FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B4106A61B72F76400E60FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PocketBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9B4106A71B72F76400E60FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PocketBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9B4106A91B72F76400E60FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PocketBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketBook.app/PocketBook";
+			};
+			name = Debug;
+		};
+		9B4106AA1B72F76400E60FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PocketBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketBook.app/PocketBook";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B41067E1B72F76400E60FDD /* Build configuration list for PBXProject "PocketBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B4106A31B72F76400E60FDD /* Debug */,
+				9B4106A41B72F76400E60FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B4106A51B72F76400E60FDD /* Build configuration list for PBXNativeTarget "PocketBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B4106A61B72F76400E60FDD /* Debug */,
+				9B4106A71B72F76400E60FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B4106A81B72F76400E60FDD /* Build configuration list for PBXNativeTarget "PocketBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B4106A91B72F76400E60FDD /* Debug */,
+				9B4106AA1B72F76400E60FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9B41068A1B72F76400E60FDD /* PocketBook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9B41068B1B72F76400E60FDD /* PocketBook.xcdatamodel */,
+			);
+			currentVersion = 9B41068B1B72F76400E60FDD /* PocketBook.xcdatamodel */;
+			path = PocketBook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9B41067B1B72F76400E60FDD /* Project object */;
+}
